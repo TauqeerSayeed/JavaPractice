@@ -18,6 +18,38 @@ public class Node {
 		return head;
 		
 	}
+	
+	//traversal
+	public static void traverse(node1 head) {
+		node1 temp = head;
+		while(temp!=null) {
+			System.out.print(temp.data+" ");
+			temp = temp.next;
+		}
+	}
+	
+	//length
+	public static int nodeLength(node1 head) {
+		node1 temp =head;
+		int count=0;
+		while(temp!=null) {
+			count++;
+			temp= temp.next;
+		}
+		return count;
+	}
+	
+	//searching
+	public static boolean search(node1 head, int val) {
+		node1 temp = head;
+		while(temp!= null) {
+			if(temp.data == val) {
+				return true;
+			}
+			temp = temp.next;
+		}
+		return false;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -28,9 +60,13 @@ public class Node {
 //		System.out.println(n1.next);
 		int[] arr = {8,4,5};
 		node1 head = convertArrayToLL(arr);
-		System.out.println(head.data);
-		System.out.println(head.next.data);
-		System.out.println(head.next.next.data);
+//		System.out.println(head.data);
+//		System.out.println(head.next.data);
+//		System.out.println(head.next.next.data);
+		traverse(head);
+		System.out.println();
+		System.out.println("Node length is " +nodeLength(head));
+		System.out.println(search(head,7));
 	}
 
 }
