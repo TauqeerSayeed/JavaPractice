@@ -1,5 +1,5 @@
 class Employee{
-	String name;
+	private String name;
 	private int salary;
 	Employee(String name,int salary){
 		this.name = name;
@@ -23,7 +23,7 @@ public class Encapsulation {
 		Employee e1 = new Employee("tauqeer",40000);
 		e1.setSalary(5000);
 		System.out.println(e1.getSalary());
-
+//		System.out.println(e1.name);
 	}
 
 }
