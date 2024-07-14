@@ -5,13 +5,14 @@ public class arraylist {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ArrayList<String> al=new ArrayList<String>();
+		ArrayList<Object> al=new ArrayList<Object>();
 		al.add("Ravi");
 		al.add("Vijay");
 		al.add("Ravi");
 		al.add("Ajay");
+		al.add(1000);
 
-		for(String obj:al) {
+		for(Object obj:al) {
 			System.out.println(obj);
 		 }
 

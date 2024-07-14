@@ -7,6 +7,8 @@ public class stringsExample1 {
 		//creating a string 
 		String name = "Mr.";
 		String str = new String("Tauqeer Sayeed");
+		String str2 = new String("Tauqeer sayeed");
+		
 		System.out.println(name);
 		System.out.println(str);
 
@@ -22,8 +24,6 @@ public class stringsExample1 {
 		System.out.println("Index of a = " + s1.indexOf('a',9));
 		
 		Boolean out = "Tauqeer".equals("tauqeer");
-		System.out.println("Checking Equality " + out);
-		out = "Geeks".equals("Geeks");
 		System.out.println("Checking Equality " + out);
 		
 		out = "Tauqeer".equalsIgnoreCase("tauqeer");
@@ -41,6 +41,9 @@ public class stringsExample1 {
 		System.out.println("Original String " + s2);
 		String s3 = s2.replace('a' ,'g') ;
 		System.out.println("Replaced a with g -> " + s3);
+		
+		String str5 = "Naqi";
+		String str6 = str5;
 	}
 
 }
