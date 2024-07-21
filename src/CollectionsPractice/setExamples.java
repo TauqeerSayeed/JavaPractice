@@ -23,7 +23,6 @@ public class setExamples {
 	            new Integer[] { 1, 3, 2, 4, 8, 9, 0 }));
 		
 		System.out.println(hashSet);
-		Collections.sort(has);
 		for(Object value: hashSet) {
 			System.out.print(value+" ");
 		}
